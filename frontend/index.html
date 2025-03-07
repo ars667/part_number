@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ампер</title>
+    <link rel="icon" type="image/svg+xml" href="/img/gear.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    <h2 class="logo">Ампер</h2>
+    <nav class="navigation">
+        <a href="index.html">Главная</a>
+        <a href="/support/support.html">Поддержка</a>
+        <button class="btnLogin-popup">Вход</button>
+    </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Вход</h2>
+            <form action="{% url 'login' %}" method="POST">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Почта</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Пароль</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Запомнить меня</label>
+                    <a href="respas.html">Забыли пароль?</a>
+                </div>
+                <button type="submit" class="btn">Вход</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
